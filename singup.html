@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" text="text/css" href="./singup.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <div id="container-top">
@@ -18,21 +18,43 @@
     
      </div>
      <div>
-        <div class="box1"><a href=""> Plane </a> </div>
-        <div class="box1"> <a href=""> Day</a> </div>
-        <div class="box1"> <a href="">Meals</a></div>
-        <div class="box1"><a href="">Checkout</a></div>
+        <div class="box1"> Plane <img src="https://cdn0.iconfinder.com/data/icons/leading-international-corporate-website-app-collec/16/Chevron_right-512.png" />  </div>
+        <div class="box1"> Day <img src="https://cdn0.iconfinder.com/data/icons/leading-international-corporate-website-app-collec/16/Chevron_right-512.png" /> </div>
+        <div class="box1"> Meals <img src="https://cdn0.iconfinder.com/data/icons/leading-international-corporate-website-app-collec/16/Chevron_right-512.png" /></div>
+        <div class="box1">Checkout </div>
     </div>
         <div >
             <!-- <div class="box1"><a href="">Get$30</a></div>
             <div class="box1"><a href="">Help</a></div> -->
-            <div class="" >
-             Customer Support
+            
+            <div class="icon1" >
+               
+            <!-- <a href="support.html"> Customer Support</a> -->
               </div>
-          
+              <div class="dropdown-menu">
+                <i class="fa fa-question-circle" style="font-size:24px;color:blue;background-color:white;"></i>
+                <button class="menu-btn">Customer Support</button>
+                <div class="menu-content">
+                <a class="links" >Live Chat</a>
+               
+                <a class="links" >Support@freshly.com</a>
+                <a class="links" >1-844-373-7459</a>
+                </div>
+                </div>
            </div>
         </div>
       </div>
+      <script>
+        let dropdownBtn = document.querySelector('.menu-btn');
+        let menuContent = document.querySelector('.menu-content');
+        dropdownBtn.addEventListener('click',()=>{
+           if(menuContent.style.display===""){
+              menuContent.style.display="block";
+           } else {
+              menuContent.style.display="";
+           }
+        })
+        </script>
       <div id="img-top">
         <div id="top">
             <div>
